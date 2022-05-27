@@ -1,0 +1,29 @@
+﻿@model IEnumerable<parcialFinalWebEntidades.habilidades>
+
+<div class="card shadow border-0 mt-5">
+    <div class="card-body">
+        <h5 class="card-title">Habilidades</h5>
+        <table class="table table-striped table-bordered table-hover">
+            <thead class="table-ligh">
+                <tr>
+                    <th>ID</th>
+                    <th>Habilidad</th>
+                    <th>calificacion</th>
+                    <th>idUsuario</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th>@item.idHabilidad</th>
+                        <th>@item.habilidad</th>
+                        <td>@item.calificacion</td>
+                        <td>@item.idUsuario</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <footer class="text-center">Derechos Reservados: Marco Esquivel - Diego Palacios</footer>
+    </div>
+</div>
