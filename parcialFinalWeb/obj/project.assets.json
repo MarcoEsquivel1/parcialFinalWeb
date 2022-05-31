@@ -5760,7 +5760,8 @@
       "Microsoft.EntityFrameworkCore >= 5.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.14",
       "parcialFinalWebContexto >= 1.0.0",
-      "parcialFinalWebDominio >= 1.0.0"
+      "parcialFinalWebDominio >= 1.0.0",
+      "parcialFinalWebEntidades >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5795,6 +5796,9 @@
             },
             "C:\\UNICAESWEB\\DPWPractica\\parcialFinalWeb\\parcialFinalWebDominio\\parcialFinalWebDominio.csproj": {
               "projectPath": "C:\\UNICAESWEB\\DPWPractica\\parcialFinalWeb\\parcialFinalWebDominio\\parcialFinalWebDominio.csproj"
+            },
+            "C:\\UNICAESWEB\\DPWPractica\\parcialFinalWeb\\parcialFinalWebEntidades\\parcialFinalWebEntidades.csproj": {
+              "projectPath": "C:\\UNICAESWEB\\DPWPractica\\parcialFinalWeb\\parcialFinalWebEntidades\\parcialFinalWebEntidades.csproj"
             }
           }
         }

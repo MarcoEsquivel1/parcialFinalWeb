@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\parcialFinalWebContexto\parcialFinalWebContexto.csproj" />
     <ProjectReference Include="..\parcialFinalWebDominio\parcialFinalWebDominio.csproj" />
+    <ProjectReference Include="..\parcialFinalWebEntidades\parcialFinalWebEntidades.csproj" />
   </ItemGroup>
 
 </Project>

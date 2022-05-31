@@ -15,8 +15,25 @@ namespace parcialFinalWebDominio
         {
             this._contexto = miContexto;
         }
+        
+        public IEnumerable<experiencias> listadoPorIdUsuario(int idUs)
+        {
+            IEnumerable<experiencias> listaExperiencias = (from e in _contexto.experiencias
+                                                           where e.idUsuario == idUs
+                                                           select new experiencias
+                                                           {
+                                                               idExperiencia = e.idExperiencia,
+                                                               experiencia = e.experiencia,
+                                                               anios = e.anios,
+                                                               idUsuario = e.idUsuario
+                                                           });
+            return listaExperiencias.ToList();
+        }
 
-
+        public experiencias buscarExperiencia(int idExp) {
+            experiencias experiencia = _contexto.experiencias.Find(idExp);
+            return experiencia;
+        }
 
     }
 }

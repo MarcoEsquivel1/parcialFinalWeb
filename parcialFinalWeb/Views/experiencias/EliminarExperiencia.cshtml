@@ -1,0 +1,47 @@
+﻿@model parcialFinalWebEntidades.experiencias
+
+@{
+    ViewBag.Title = "Eliminar Experiencia";
+}
+
+<h2>Eliminar Experiencia</h2>
+
+<h3>¿Estas seguro de eliminar esta experiencia?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Nombre de la Experiencia:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.experiencia)
+        </dd>
+
+        <dt>
+            Años de Experiencia:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.anios)
+        </dd>
+
+    </dl>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.idExperiencia)
+        @Html.HiddenFor(model => model.experiencia)
+        @Html.HiddenFor(model => model.anios)
+        @Html.HiddenFor(model => model.idUsuario)
+
+        <div class="form-actions no-color">
+            <input type="submit" name="response" value="Eliminar Experiencia" formaction=@Url.Action("Eliminar") formmethod="post" class="btn btn-danger" />
+
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Regresar a la lista", "Index", new { id = Model.idUsuario })
+    </div>
+</div>

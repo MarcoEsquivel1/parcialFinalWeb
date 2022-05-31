@@ -1,0 +1,39 @@
+﻿@model IEnumerable<parcialFinalWebEntidades.experiencias>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Experiencias @ViewBag.NombreUsuario</h2>
+
+<p>
+    @Html.ActionLink("Agregar Experiencia", "CrearExperiencia", new { id = ViewBag.IdUsuario})
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            Experiencia
+        </th>
+        <th>
+            Años de Experiencia
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) { 
+    <tr>
+        <td>
+            @item.experiencia
+        </td>
+        <td>
+            @item.anios
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "EditarExperiencia", new { id = item.idExperiencia }) |
+            @Html.ActionLink("Eliminar", "EliminarExperiencia", new { id = item.idExperiencia })
+        </td>
+    </tr>
+}
+</table>
+

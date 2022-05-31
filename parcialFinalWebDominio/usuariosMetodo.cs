@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace parcialFinalWebDominio
 {
+    
     public class usuariosMetodo
     {
         private readonly dbContext _contexto;
@@ -16,6 +17,20 @@ namespace parcialFinalWebDominio
             this._contexto = miContexto;
         }
 
+        public string nombreUsuario(int idUsuario)
+        {
+            var us = (from u in _contexto.usuarios
+                      where u.idUsuario == idUsuario
+                      select new usuarios
+                      {
+                          nombres = u.nombres,
+                          apellidos = u.apellidos
+                      }).FirstOrDefault();
+
+            string nombre = us.nombres + " " + us.apellidos;
+
+            return nombre;
+        }
 
     }
 }

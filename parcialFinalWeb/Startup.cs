@@ -26,6 +26,7 @@ namespace parcialFinalWeb
         {
             services.AddControllersWithViews();
             services.AddDbContext<dbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("dbConnection")));
+            services.AddMvc(options => options.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,18 +40,14 @@ namespace parcialFinalWeb
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseMvc(routes => {
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+            });  
         }
     }
 }
