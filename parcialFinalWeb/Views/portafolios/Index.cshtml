@@ -1,0 +1,57 @@
+﻿@model IEnumerable<parcialFinalWebEntidades.portafolios>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Portafolios @ViewBag.NombreUsuario</h2>
+
+<p>
+    @Html.ActionLink("Agregar Portafolio", "CrearPortafolio", new { id = ViewBag.IdUsuario })
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            Nombre del portafolio
+        </th>
+        <th>
+            Rol en el proyecto
+        </th>
+        <th>
+            Resumen del proyecto
+        </th>
+        <th>
+            Responsabilidades en el proyecto
+        </th>
+        <th>
+            Tecnologias usadas
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.nombreProyecto
+            </td>
+            <td>
+                @item.rol
+            </td>
+            <td>
+                @item.resumen
+            </td>
+            <td>
+                @item.responsabilidades
+            </td>
+            <td>
+                @item.tecnologiasUsadas
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "EditarPortafolio", new { id = item.idPortafolio }) |
+                @Html.ActionLink("Eliminar", "EliminarPortafolio", new { id = item.idPortafolio })
+            </td>
+        </tr>
+    }
+</table>

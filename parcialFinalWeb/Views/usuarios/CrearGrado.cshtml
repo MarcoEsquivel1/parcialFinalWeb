@@ -4,7 +4,7 @@
     ViewBag.Title = "Crear grado academico";
 }
 
-<h2>Crear experiencia para @ViewBag.nombreU</h2>
+<h2>Agregar grado academico.</h2>
 
 @using (Html.BeginForm())
 {
@@ -14,7 +14,7 @@
     <hr />
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-    @Html.Hidden("idUsuario",(int)ViewBag.IdUser);
+    @Html.Hidden("idUsuario",(int)ViewBag.IdUser)
    
     <div class="form-group">
         @Html.LabelFor(model => model.universidad, "Nombre de la universidad:", htmlAttributes: new { @class = "control-label col-md-2" })
