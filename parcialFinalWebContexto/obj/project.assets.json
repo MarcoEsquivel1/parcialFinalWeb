@@ -5722,19 +5722,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Marco\\.nuget\\packages\\": {}
+    "C:\\Users\\Mery Acevedo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\UNICAESWEB\\DPWPractica\\parcialFinalWeb\\parcialFinalWebContexto\\parcialFinalWebContexto.csproj",
+      "projectUniqueName": "C:\\practicasasp\\parcialFinal\\parcialFinalWeb\\parcialFinalWebContexto\\parcialFinalWebContexto.csproj",
       "projectName": "parcialFinalWebContexto",
-      "projectPath": "C:\\UNICAESWEB\\DPWPractica\\parcialFinalWeb\\parcialFinalWebContexto\\parcialFinalWebContexto.csproj",
-      "packagesPath": "C:\\Users\\Marco\\.nuget\\packages\\",
-      "outputPath": "C:\\UNICAESWEB\\DPWPractica\\parcialFinalWeb\\parcialFinalWebContexto\\obj\\",
+      "projectPath": "C:\\practicasasp\\parcialFinal\\parcialFinalWeb\\parcialFinalWebContexto\\parcialFinalWebContexto.csproj",
+      "packagesPath": "C:\\Users\\Mery Acevedo\\.nuget\\packages\\",
+      "outputPath": "C:\\practicasasp\\parcialFinal\\parcialFinalWeb\\parcialFinalWebContexto\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mery Acevedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5748,8 +5755,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\UNICAESWEB\\DPWPractica\\parcialFinalWeb\\parcialFinalWebEntidades\\parcialFinalWebEntidades.csproj": {
-              "projectPath": "C:\\UNICAESWEB\\DPWPractica\\parcialFinalWeb\\parcialFinalWebEntidades\\parcialFinalWebEntidades.csproj"
+            "C:\\practicasasp\\parcialFinal\\parcialFinalWeb\\parcialFinalWebEntidades\\parcialFinalWebEntidades.csproj": {
+              "projectPath": "C:\\practicasasp\\parcialFinal\\parcialFinalWeb\\parcialFinalWebEntidades\\parcialFinalWebEntidades.csproj"
             }
           }
         }
@@ -5788,7 +5795,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

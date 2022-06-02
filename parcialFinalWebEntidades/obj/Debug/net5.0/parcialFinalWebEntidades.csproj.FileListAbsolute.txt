@@ -10,3 +10,15 @@ C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWebEntidades\obj\Debug\net
 C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.dll
 C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWebEntidades\obj\Debug\net5.0\ref\parcialFinalWebEntidades.dll
 C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.pdb
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWebEntidades\bin\Debug\net5.0\parcialFinalWebEntidades.deps.json
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWebEntidades\bin\Debug\net5.0\parcialFinalWebEntidades.dll
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWebEntidades\bin\Debug\net5.0\ref\parcialFinalWebEntidades.dll
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWebEntidades\bin\Debug\net5.0\parcialFinalWebEntidades.pdb
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.csproj.AssemblyReference.cache
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.AssemblyInfoInputs.cache
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.AssemblyInfo.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.csproj.CoreCompileInputs.cache
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.dll
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWebEntidades\obj\Debug\net5.0\ref\parcialFinalWebEntidades.dll
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.pdb

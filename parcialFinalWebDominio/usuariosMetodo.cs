@@ -17,7 +17,41 @@ namespace parcialFinalWebDominio
             this._contexto = miContexto;
         }
 
-        public string nombreUsuario(int idUsuario)
+        public IEnumerable<usuarios> listadoUsuarios()
+        {
+            IEnumerable<usuarios> listausuarios= (from e in _contexto.usuarios 
+
+
+                                                  select new usuarios
+                                                           {
+                                                               idUsuario = e.idUsuario,
+                                                               username = e.username,
+                                                               foto = e.foto,
+                                                               nombres = e.nombres,
+                                                               apellidos = e.apellidos,
+                                                               correo = e.correo
+                                                               
+
+                                                           });
+            return listausuarios.ToList();
+        }
+       
+        public usuarios GetUsuarios(int idUsuario)
+        {
+            usuarios usuario = _contexto.usuarios.Find(idUsuario);
+            return usuario;
+        }
+
+
+
+
+
+
+
+
+
+
+       public string nombreUsuario(int idUsuario)
         {
             var us = (from u in _contexto.usuarios
                       where u.idUsuario == idUsuario
@@ -27,7 +61,7 @@ namespace parcialFinalWebDominio
                           apellidos = u.apellidos
                       }).FirstOrDefault();
 
-            string nombre = us.nombres + " " + us.apellidos;
+            string nombre = us.nombres.ToString();
 
             return nombre;
         }

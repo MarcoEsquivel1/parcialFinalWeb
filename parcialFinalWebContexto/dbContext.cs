@@ -21,5 +21,7 @@ namespace parcialFinalWebContexto
         public DbSet<habilidades> habilidades { get; set; }
         public DbSet<experiencias> experiencias { get; set; }
         public DbSet<portafolios> portafolios { get; set; }
+
+        public DbSet<gradosacademicos> gradosAcademicos { get; set; }
     }
 }
