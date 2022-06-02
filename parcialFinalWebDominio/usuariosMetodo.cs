@@ -27,8 +27,15 @@ namespace parcialFinalWebDominio
                           apellidos = u.apellidos
                       }).FirstOrDefault();
 
-            string nombre = us.nombres + " " + us.apellidos;
-
+            string nombre;
+            if (us == null || us.nombres == null || us.apellidos == null)
+            {
+                nombre = null;
+            }
+            else
+            {
+                nombre = us.nombres + " " + us.apellidos;
+            }
             return nombre;
         }
 

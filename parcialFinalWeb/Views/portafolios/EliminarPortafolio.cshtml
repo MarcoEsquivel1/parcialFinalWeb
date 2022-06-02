@@ -1,0 +1,74 @@
+﻿@model parcialFinalWebEntidades.portafolios
+
+@{
+    ViewBag.Title = "Eliminar Portafolio";
+}
+
+<h2>Eliminar Portafolio</h2>
+
+<h3>¿Estas seguro de eliminar este portafolio?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Nombre del Proyecto:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreProyecto)
+        </dd>
+
+        <dt>
+            Rol:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rol)
+        </dd>
+
+        <dt>
+            Resumen:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.resumen)
+        </dd>
+
+        <dt>
+            Responsabilidades:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.responsabilidades)
+        </dd>
+
+        <dt>
+            Tecnologias usadas:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tecnologiasUsadas)
+        </dd>
+
+    </dl>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.idPortafolio)
+        @Html.HiddenFor(model => model.nombreProyecto)
+        @Html.HiddenFor(model => model.rol)
+        @Html.HiddenFor(model => model.resumen)
+        @Html.HiddenFor(model => model.responsabilidades)
+        @Html.HiddenFor(model => model.tecnologiasUsadas)
+        @Html.HiddenFor(model => model.idUsuario)
+
+        <div class="form-actions no-color">
+            <input type="submit" name="response" value="Eliminar Portafolio" formaction=@Url.Action("Eliminar") formmethod="post" class="btn btn-danger" />
+
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Regresar a la lista", "Index", new { id = Model.idUsuario })
+    </div>
+</div>

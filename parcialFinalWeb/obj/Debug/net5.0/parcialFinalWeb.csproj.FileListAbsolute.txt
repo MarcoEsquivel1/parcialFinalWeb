@@ -79,3 +79,7 @@ C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor
 C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\experiencias\CrearExperiencia.cshtml.g.cs
 C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\experiencias\EditarExperiencia.cshtml.g.cs
 C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\experiencias\EliminarExperiencia.cshtml.g.cs
+C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\portafolios\Index.cshtml.g.cs
+C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\portafolios\CrearPortafolio.cshtml.g.cs
+C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\portafolios\EditarPortafolio.cshtml.g.cs
+C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\portafolios\EliminarPortafolio.cshtml.g.cs

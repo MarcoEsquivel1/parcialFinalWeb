@@ -23,6 +23,10 @@ namespace parcialFinalWeb.Controllers
         public ActionResult Index(int id)
         {
             string nombreUsuario = new usuariosMetodo(_contexto).nombreUsuario(id);
+            if (nombreUsuario == null)
+            {
+                return RedirectToAction("Error");
+            }
             ViewBag.IdUsuario = id;
             ViewBag.NombreUsuario = nombreUsuario;
             var experiencias = new experienciasMetodo(_contexto).listadoPorIdUsuario(id);
@@ -32,6 +36,10 @@ namespace parcialFinalWeb.Controllers
         public ActionResult CrearExperiencia(int id)
         {
             string nombreUsuario = new usuariosMetodo(_contexto).nombreUsuario(id);
+            if (nombreUsuario == null)
+            {
+                return RedirectToAction("Error");
+            }
             ViewBag.IdUsuario = id;
             ViewBag.NombreUsuario = nombreUsuario;
             return View();
