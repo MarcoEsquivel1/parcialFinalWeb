@@ -55,44 +55,7 @@ namespace parcialFinalWeb.Controllers
             }
             return RedirectToAction("Crear", datos);
         }
-        /// <summary>
-        /// //////         crear grados academicos
-        /// </summary>
-        public ActionResult CrearGrado(int id)
-        {
-            //String nombre = new usuariosMetodo(_contexto).nombreUsuario(id); //error al llamar metodo
-            //ViewBag.nombreU = nombre;
-            ViewBag.idUser = id;
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult CrearGrado(gradosacademicos datos)
-        {
-            if (ModelState.IsValid)
-            {
-                var nuevoGrado = new gradosacademicos()
-                {
-                   profesion = datos.profesion,
-                   universidad = datos.universidad,
-                   objetivo = datos.objetivo,
-                   idUsuario = datos.idUsuario
-                  
-
-                };
-
-                _contexto.gradosAcademicos.Add(nuevoGrado);
-                _contexto.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return RedirectToAction("CrearGrado", datos);
-        }
-
-        /// <summary>
-        /// //////////
-        /// </summary>
-     
+      
 
         public ActionResult Editar(int id)
 

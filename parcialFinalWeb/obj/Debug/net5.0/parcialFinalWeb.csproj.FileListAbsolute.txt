@@ -176,3 +176,14 @@ C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Ra
 C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\portafolios\EditarPortafolio.cshtml.g.cs
 C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\portafolios\EliminarPortafolio.cshtml.g.cs
 C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\portafolios\Index.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\gradosAcademicosController1\crearGrado.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\gradosAcademicosController1\EditarGrado.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\gradosAcademicosController1\EliminarGrado.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\gradosAcademicosController1\Index.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\gradosAcademicos\crearGrado.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\gradosAcademicos\EditarGrado.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\gradosAcademicos\EliminarGrado.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\gradosAcademicos\Index.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\habilidades\CrearHabilidad.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\habilidades\EditarHabilidad.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\habilidades\EliminarHabilidad.cshtml.g.cs

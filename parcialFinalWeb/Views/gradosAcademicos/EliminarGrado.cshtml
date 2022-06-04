@@ -1,0 +1,55 @@
+﻿@model parcialFinalWebEntidades.gradosacademicos
+
+@{
+    ViewBag.Title = "Eliminar grado academico";
+}
+
+<h2>Eliminar grado academico</h2>
+
+<h3>¿Estas seguro de eliminar este grado academico?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Universidad:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.universidad)
+        </dd>
+
+        <dt>
+            Profesion:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.profesion)
+        </dd>
+        <dt>
+            Ojetivo:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.objetivo)
+        </dd>
+
+    </dl>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        @Html.HiddenFor(model => model.idUsuario)
+        @Html.HiddenFor(model => model.idGrado)
+        @Html.HiddenFor(model => model.universidad)
+        @Html.HiddenFor(model => model.profesion)
+        @Html.HiddenFor(model => model.objetivo)
+        <div class="form-actions no-color">
+            <input type="submit" name="response" value="Eliminar Grado" formaction=@Url.Action("Eliminar") formmethod="post" class="btn btn-danger" />
+
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Regresar a la lista", "Index", new { id = Model.idUsuario })
+    </div>
+</div>

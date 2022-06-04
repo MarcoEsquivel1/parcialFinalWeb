@@ -27,15 +27,8 @@ namespace parcialFinalWebEntidades
         public string facebook { get; set; }
         public string otro { get; set; }
         [NotMapped]
-        public gradoAcademico grado { get; set; }
+        public gradosacademicos grado { get; set; }
     }
 
-    [Keyless]
-    public class gradoAcademico
-    {
-        public string profesion { get; set; }
-        public string universidad { get; set; }
-        public string objetivo { get; set; }
-
-    }
+   
 }

@@ -12,11 +12,11 @@
         <th>
             user
         </th>
-        
+
         <th>Grados Academicos</th>
         <th>Experiencia</th>
-        <th>Portafolios</th>     
-
+        <th>Portafolios</th>
+        <th>Habilidades</th>
         <th> opciones</th>
     </tr>
 
@@ -28,13 +28,16 @@
     </td>
 
     <td>
-        @Html.ActionLink("Agregar", "CrearGrado", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Ver mas", "Index", "gradosAcademicos", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
     </td>
     <td>
         @Html.ActionLink("ir", "index", "experiencias", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
     </td>
     <td>
         @Html.ActionLink("ir", "index", "portafolios", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
+    </td>
+    <td>
+        @Html.ActionLink("ir", "index", "habilidades", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
     </td>
     <td>
 
