@@ -17,6 +17,7 @@
         <th>Experiencia</th>
         <th>Portafolios</th>
         <th>Habilidades</th>
+        <th>Certificados cursos</th>
         <th> opciones</th>
     </tr>
 
@@ -31,13 +32,16 @@
         @Html.ActionLink("Ver mas", "Index", "gradosAcademicos", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
     </td>
     <td>
-        @Html.ActionLink("ir", "index", "experiencias", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("ver", "index", "experiencias", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
     </td>
     <td>
-        @Html.ActionLink("ir", "index", "portafolios", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("ver", "index", "portafolios", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
     </td>
     <td>
-        @Html.ActionLink("ir", "index", "habilidades", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("ver", "index", "habilidades", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
+    </td>
+    <td>
+        @Html.ActionLink("ver", "index", "certificadoscursos", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
     </td>
     <td>
 

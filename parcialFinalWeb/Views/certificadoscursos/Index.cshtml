@@ -1,0 +1,50 @@
+﻿@model IEnumerable<parcialFinalWebEntidades.certificadoscursos>
+
+@{ ViewBag.Title = "Index"; }
+
+<h2>Certificados Cursos @ViewBag.NombreUsuario</h2>
+
+<p>
+    @Html.ActionLink("Agregar Certificados Cursos", "CrearCertificadosCursos", new { id = ViewBag.IdUsuario })
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            Nombre del certificado de curso
+        </th>
+        <th>
+            Institución del certificado de curso
+        </th>
+        <th>
+            Descripción del certificado de curso
+        </th>
+        <th>
+            Enlace
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @item.nombre
+    </td>
+    <td>
+        @item.institucion
+    </td>
+    <td>
+        @item.descripcion
+    </td>
+    <td>
+        @item.enlace
+    </td>
+    <td>
+        @Html.ActionLink("Editar", "EditarCertificadosCursos", new { id = item.idCertifiado }) |
+        @Html.ActionLink("Eliminar", "EliminarCertificadosCursos", new { id = item.idCertifiado })
+    </td>
+</tr>}
+</table>
+
+@Html.ActionLink("Regresar a usuarios", "Index", "usuarios", new { @class = "btn btn-primary" })

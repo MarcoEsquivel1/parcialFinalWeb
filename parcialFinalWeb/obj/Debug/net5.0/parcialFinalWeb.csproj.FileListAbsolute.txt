@@ -187,3 +187,7 @@ C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Ra
 C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\habilidades\CrearHabilidad.cshtml.g.cs
 C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\habilidades\EditarHabilidad.cshtml.g.cs
 C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\habilidades\EliminarHabilidad.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\certificadoscursos\CrearCertificadosCursos.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\certificadoscursos\EditarCertificadosCursos.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\certificadoscursos\EliminarCertificadosCursos.cshtml.g.cs
+C:\practicasasp\parcialFinal\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\Razor\Views\certificadoscursos\Index.cshtml.g.cs

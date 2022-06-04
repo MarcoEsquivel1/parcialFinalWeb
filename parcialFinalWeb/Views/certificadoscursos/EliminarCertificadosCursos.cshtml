@@ -1,0 +1,62 @@
+﻿@model parcialFinalWebEntidades.certificadoscursos
+
+@{ ViewBag.Title = "Eliminar Certificados de Cursos"; }
+
+<h2>Eliminar Certificados de Cursos</h2>
+
+<h3>¿Estas seguro de eliminar este certificado de curso?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Nombre del Certificado de Curso:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            Institución
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.institucion)
+        </dd>
+
+        <dt>
+            Descripción
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        <dt>
+            Enlace
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.enlace)
+        </dd>
+
+    </dl>
+    @using (Html.BeginForm())
+    {
+@Html.AntiForgeryToken()
+                @Html.HiddenFor(model => model.idCertifiado)
+                                @Html.HiddenFor(model => model.nombre)
+                                                @Html.HiddenFor(model => model.institucion)
+                                                                @Html.HiddenFor(model => model.descripcion)
+                                                                                @Html.HiddenFor(model => model.enlace)
+                                                                                                @Html.HiddenFor(model => model.idUsuario)
+
+                                                                                                                <div class="form-actions no-color">
+                                                                                                                    <input type="submit" name="response" value="Eliminar Certificados de Cursos" formaction=@Url.Action("Eliminar") formmethod="post" class="btn btn-danger" />
+
+                                                                                                                </div>}
+
+    <div>
+        @Html.ActionLink("Regresar a la lista", "Index", new { id = Model.idUsuario })
+    </div>
+</div>
