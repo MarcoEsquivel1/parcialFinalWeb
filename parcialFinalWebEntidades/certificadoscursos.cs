@@ -10,7 +10,7 @@ namespace parcialFinalWebEntidades
     public class certificadoscursos
     {
         [Key]
-        public int idCertificado { get; set; }
+        public int idCertifiado { get; set; }
         [Required]
         public string nombre { get; set; }
         [Required]

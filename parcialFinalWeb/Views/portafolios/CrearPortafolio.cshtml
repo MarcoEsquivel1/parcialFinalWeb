@@ -1,7 +1,7 @@
 ﻿@model parcialFinalWebEntidades.portafolios
 
 @{
-    ViewBag.Title = "Crear Experiencia";
+    ViewBag.Title = "Crear Portafolio";
 }
 
 <h2>Crear experiencia para @ViewBag.NombreUsuario</h2>
@@ -71,5 +71,5 @@
 }
 
 <div>
-    @Html.ActionLink("Regresar a la lista", "Index", new { id = (int)ViewBag.IdUsuario })
+    @Html.ActionLink("Regresar a la lista", "Index", null, new { id = (int)ViewBag.IdUsuario }, new { @class = "btn btn-outline-danger" })
 </div>

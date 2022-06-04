@@ -1,0 +1,51 @@
+﻿@model parcialFinalWebEntidades.usuarios
+
+@{
+    ViewBag.Title = "Eliminar usuario";
+}
+
+<h2>Eliminar usuario</h2>
+
+<h3>¿Estas seguro de eliminar este usuario?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            UserName:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.username)
+        </dd>
+
+        <dt>
+           Nombre:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombres)
+        </dd>
+        <dt>
+            Apellidos:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidos)
+        </dd>
+    </dl>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        
+        @Html.HiddenFor(model => model.idUsuario)
+
+        <div class="form-actions no-color">
+            <input type="submit" name="response" value="Eliminar usuario" formaction=@Url.Action("Eliminar") formmethod="post" class="btn btn-danger" />
+
+        </div>
+    }
+
+<div>
+    @Html.ActionLink("Regresar a la lista", "Index", null, null, new { @class = "btn btn-outline-danger" })
+</div>
+</div>

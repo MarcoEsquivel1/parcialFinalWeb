@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace parcialFinalWebEntidades
 {
-    class gradosacademicos
+    public class gradosacademicos
     {
         [Key]
         public int idGrado { get; set; }
@@ -18,5 +19,7 @@ namespace parcialFinalWebEntidades
         public string objetivo { get; set; }
         [Required]
         public int idUsuario { get; set; }
+        [NotMapped]
+        public usuarios usuario { get; set; }
     }
 }

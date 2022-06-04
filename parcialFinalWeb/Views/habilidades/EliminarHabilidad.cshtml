@@ -1,0 +1,44 @@
+﻿@model parcialFinalWebEntidades.habilidades
+
+@{ ViewBag.Title = "Eliminar Habilidad"; }
+
+<h2>Eliminar Habilidad</h2>
+
+<h3>¿Estas seguro de eliminar esta habilidad?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Nombre de la Habilidad:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.habilidad)
+        </dd>
+
+        <dt>
+            Calificacion de la Habilidad:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.calificacion)
+        </dd>
+
+    </dl>
+    @using (Html.BeginForm())
+    {
+@Html.AntiForgeryToken()
+                @Html.HiddenFor(model => model.idHabilidad)
+                                @Html.HiddenFor(model => model.habilidad)
+                                                @Html.HiddenFor(model => model.calificacion)
+                                                                @Html.HiddenFor(model => model.idUsuario)
+
+                                                                                <div class="form-actions no-color">
+                                                                                    <input type="submit" name="response" value="Eliminar Habilidad" formaction=@Url.Action("Eliminar") formmethod="post" class="btn btn-danger" />
+
+                                                                                </div>}
+
+<div>
+    @Html.ActionLink("Regresar a la lista", "Index", null, new { id = Model.idUsuario }, new { @class = "btn btn-outline-danger" })
+</div>
+</div>

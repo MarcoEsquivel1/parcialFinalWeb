@@ -7,10 +7,10 @@
 <h2>Portafolios @ViewBag.NombreUsuario</h2>
 
 <p>
-    @Html.ActionLink("Agregar Portafolio", "CrearPortafolio", new { id = ViewBag.IdUsuario })
+    @Html.ActionLink("Agregar Portafolio", "CrearPortafolio", new { id = ViewBag.IdUsuario }, new { @class = "btn btn-primary" })
 </p>
 
-<table class="table">
+<table class="table table-light table-striped">
     <tr>
         <th>
             Nombre del portafolio
@@ -30,7 +30,7 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model)
+    @foreach (var item in Model)
     {
         <tr>
             <td>
@@ -55,3 +55,4 @@
         </tr>
     }
 </table>
+@Html.ActionLink("Regresar a usuarios", "Index", "usuarios", null, new { @class = "btn btn-outline-danger" })

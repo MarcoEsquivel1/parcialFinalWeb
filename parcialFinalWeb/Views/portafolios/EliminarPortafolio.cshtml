@@ -68,7 +68,7 @@
         </div>
     }
 
-    <div>
-        @Html.ActionLink("Regresar a la lista", "Index", new { id = Model.idUsuario })
-    </div>
+<div>
+    @Html.ActionLink("Regresar a la lista", "Index", null, new { id = Model.idUsuario }, new { @class = "btn btn-outline-danger" })
+</div>
 </div>

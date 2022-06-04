@@ -1,3 +1,15 @@
+C:\Users\Marco\Desktop\parcialFinalWeb-m-usuario\parcialFinalWebEntidades\bin\Debug\net5.0\parcialFinalWebEntidades.deps.json
+C:\Users\Marco\Desktop\parcialFinalWeb-m-usuario\parcialFinalWebEntidades\bin\Debug\net5.0\parcialFinalWebEntidades.dll
+C:\Users\Marco\Desktop\parcialFinalWeb-m-usuario\parcialFinalWebEntidades\bin\Debug\net5.0\ref\parcialFinalWebEntidades.dll
+C:\Users\Marco\Desktop\parcialFinalWeb-m-usuario\parcialFinalWebEntidades\bin\Debug\net5.0\parcialFinalWebEntidades.pdb
+C:\Users\Marco\Desktop\parcialFinalWeb-m-usuario\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marco\Desktop\parcialFinalWeb-m-usuario\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.AssemblyInfoInputs.cache
+C:\Users\Marco\Desktop\parcialFinalWeb-m-usuario\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.AssemblyInfo.cs
+C:\Users\Marco\Desktop\parcialFinalWeb-m-usuario\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Desktop\parcialFinalWeb-m-usuario\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.dll
+C:\Users\Marco\Desktop\parcialFinalWeb-m-usuario\parcialFinalWebEntidades\obj\Debug\net5.0\ref\parcialFinalWebEntidades.dll
+C:\Users\Marco\Desktop\parcialFinalWeb-m-usuario\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.pdb
+C:\Users\Marco\Desktop\parcialFinalWeb-m-usuario\parcialFinalWebEntidades\obj\Debug\net5.0\parcialFinalWebEntidades.csproj.AssemblyReference.cache
 C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWebEntidades\bin\Debug\net5.0\parcialFinalWebEntidades.deps.json
 C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWebEntidades\bin\Debug\net5.0\parcialFinalWebEntidades.dll
 C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWebEntidades\bin\Debug\net5.0\ref\parcialFinalWebEntidades.dll

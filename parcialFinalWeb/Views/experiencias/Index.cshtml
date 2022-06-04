@@ -7,10 +7,10 @@
 <h2>Experiencias @ViewBag.NombreUsuario</h2>
 
 <p>
-    @Html.ActionLink("Agregar Experiencia", "CrearExperiencia", new { id = ViewBag.IdUsuario})
+    @Html.ActionLink("Agregar Experiencia", "CrearExperiencia", new { id = ViewBag.IdUsuario }, new { @class = "btn btn-primary" })
 </p>
 
-<table class="table">
+<table class="table table-light table-striped">
     <tr>
         <th>
             Experiencia
@@ -21,19 +21,21 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) { 
-    <tr>
-        <td>
-            @item.experiencia
-        </td>
-        <td>
-            @item.anios
-        </td>
-        <td>
-            @Html.ActionLink("Editar", "EditarExperiencia", new { id = item.idExperiencia }) |
-            @Html.ActionLink("Eliminar", "EliminarExperiencia", new { id = item.idExperiencia })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.experiencia
+            </td>
+            <td>
+                @item.anios
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "EditarExperiencia", new { id = item.idExperiencia }) |
+                @Html.ActionLink("Eliminar", "EliminarExperiencia", new { id = item.idExperiencia })
+            </td>
+        </tr>
+    }
 </table>
+@Html.ActionLink("Regresar a usuarios", "Index", "usuarios", null, new { @class = "btn btn-outline-danger" })
 

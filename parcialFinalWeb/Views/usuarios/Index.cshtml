@@ -1,0 +1,54 @@
+﻿@model IEnumerable<parcialFinalWebEntidades.usuarios>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@Html.ActionLink("CrearUsuario", "Crear", null, null,new { @class = "btn btn-primary" })
+
+<table class="table table-light table-striped">
+    <tr>
+        <th>
+            user
+        </th>
+
+        <th>Grados Academicos</th>
+        <th>Experiencia</th>
+        <th>Portafolios</th>
+        <th>Habilidades</th>
+        <th>Certificados cursos</th>
+        <th> opciones</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.username
+            </td>
+
+            <td>
+                @Html.ActionLink("Ver mas", "Index", "gradosAcademicos", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                @Html.ActionLink("ver", "index", "experiencias", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                @Html.ActionLink("ver", "index", "portafolios", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                @Html.ActionLink("ver", "index", "habilidades", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                @Html.ActionLink("ver", "index", "certificadoscursos", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+
+                @Html.ActionLink("Editar", "Editar", new { id = item.idUsuario }, new { @class = "btn btn-primary" }) |
+                @Html.ActionLink("Eliminar", "Eliminar", new { id = item.idUsuario }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+</table>
+

@@ -11,9 +11,11 @@ namespace parcialFinalWebEntidades
     {
         [Key]
         public int idHabilidad { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Debe ingresar el nombre de la habilidad")]
+        [MinLength(3, ErrorMessage = "Ingrese un nombre de habilidad valido")]
         public string habilidad { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Debe una calificación del 1-5")]
+        [Range(1, 5, ErrorMessage = "Ingrese una calificacion del 1-5")]
         public int calificacion { get; set; }
         [Required]
         public int idUsuario { get; set; }
