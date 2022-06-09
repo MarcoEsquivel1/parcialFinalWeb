@@ -202,3 +202,4 @@ C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\parci
 C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\ref\parcialFinalWeb.dll
 C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\parcialFinalWeb.pdb
 C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWeb\obj\Debug\net5.0\parcialFinalWeb.genruntimeconfig.cache
+C:\UNICAESWEB\DPWPractica\parcialFinalWeb\parcialFinalWeb\bin\Debug\net5.0\libman.json

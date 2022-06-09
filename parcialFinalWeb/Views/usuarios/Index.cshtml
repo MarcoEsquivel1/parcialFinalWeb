@@ -12,7 +12,7 @@
         <th>
             user
         </th>
-
+        <th>Landing Page</th>
         <th>Grados Academicos</th>
         <th>Experiencia</th>
         <th>Portafolios</th>
@@ -27,7 +27,9 @@
             <td>
                 @item.username
             </td>
-
+            <td>
+                @Html.ActionLink("Ver mas", "Index", "landing", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
+            </td>
             <td>
                 @Html.ActionLink("Ver mas", "Index", "gradosAcademicos", new { id = item.idUsuario }, new { @class = "btn btn-primary" })
             </td>

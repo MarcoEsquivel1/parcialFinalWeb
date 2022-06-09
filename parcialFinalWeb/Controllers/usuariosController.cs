@@ -34,6 +34,10 @@ namespace parcialFinalWeb.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (datos.foto == null || datos.foto == "")
+                {
+                    datos.foto = "https://us.123rf.com/450wm/thesomeday123/thesomeday1231712/thesomeday123171200009/91087331-icono-de-perfil-de-avatar-predeterminado-para-hombre-marcador-de-posici%C3%B3n-de-foto-gris-vector-de-ilu.jpg";
+                }
                 var nuevoUsuario = new usuarios()
                 {
                     username = datos.username,
@@ -72,6 +76,10 @@ namespace parcialFinalWeb.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Editar(usuarios datos)
         {
+            if (datos.foto == null || datos.foto == "")
+            {
+                datos.foto = "https://us.123rf.com/450wm/thesomeday123/thesomeday1231712/thesomeday123171200009/91087331-icono-de-perfil-de-avatar-predeterminado-para-hombre-marcador-de-posici%C3%B3n-de-foto-gris-vector-de-ilu.jpg";
+            }
             if (ModelState.IsValid)
             {
                 _contexto.Entry(datos).State = EntityState.Modified;

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CyhAg6KlKuK+8dKmVbeZLT5j8EoM3HogMxw0F9iTu3yYzs/DGPhyISZSQtQk5d5y5yKpoSvF4yjuwJGehitq6w==",
+  "dgSpecHash": "CPpdOj8SKMNOtqBhVfG2BZjVJy5lL53jN5NxqzZYn8SaILQimPlJmq2+6vdcEWKOiI5qHoJ4YJyzg09JYD7zKg==",
   "success": true,
   "projectFilePath": "C:\\UNICAESWEB\\DPWPractica\\parcialFinalWeb\\parcialFinalWeb\\parcialFinalWeb.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Marco\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
     "C:\\Users\\Marco\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Marco\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Marco\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using parcialFinalWebContexto;
 using parcialFinalWebDominio;
+using parcialFinalWebEntidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,14 +18,24 @@ namespace parcialFinalWeb.Controllers
         }
         public ActionResult Index(int id)
         {
-            string nombreUsuario = new usuariosMetodo(_contexto).nombreUsuario(id);
-            if (nombreUsuario == null)
+            IEnumerable<experiencias> experiencias = new experienciasMetodo(_contexto).listadoPorIdUsuario(id);
+            IEnumerable<habilidades> habilidades = new habilidadesMetodo(_contexto).listado(id);
+            IEnumerable<portafolios> portafolios = new portafoliosMetodo(_contexto).listadoPorIdUsuario(id);
+            IEnumerable<certificadoscursos> certificados = new certificadoscursosMetodo(_contexto).listadoPorIdUsuario(id);
+            IEnumerable<gradosacademicos> grados = new gradosacademicosMetodo(_contexto).listadoPorIdUsuario(id);
+            usuarios usuario = new usuariosMetodo(_contexto).GetUsuarios(id);
+            if (usuario == null || experiencias == null || habilidades == null || 
+                portafolios == null || certificados == null || grados == null)
             {
                 return RedirectToAction("Error");
             }
-            ViewBag.IdUsuario = id;
-            ViewBag.NombreUsuario = nombreUsuario;
-            return View();
+            ViewBag.Experiencias = experiencias;
+            ViewBag.Habilidades = habilidades;
+            ViewBag.Portafolios = portafolios;
+            ViewBag.Certificados = certificados;
+            ViewBag.Grados = grados;
+            
+            return View(usuario);
         }
     }
 }
