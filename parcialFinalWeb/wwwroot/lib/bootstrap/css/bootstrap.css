@@ -72,10 +72,10 @@
 }
 
 .mycontent-left {
-    border-right: 1px dashed #333;
+    border-right: 1px dashed #fff;
 }
 .my-border-bottom {
-    border-bottom: 1px dashed #333;
+    border-bottom: 1px dashed #fff;
 }
 
 body {

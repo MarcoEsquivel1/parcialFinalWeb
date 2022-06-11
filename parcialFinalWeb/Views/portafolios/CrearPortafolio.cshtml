@@ -4,7 +4,7 @@
     ViewBag.Title = "Crear Portafolio";
 }
 
-<h2>Crear experiencia para @ViewBag.NombreUsuario</h2>
+<h2>Crear portafolio para @ViewBag.NombreUsuario</h2>
 
 @using (Html.BeginForm())
 {
@@ -64,7 +64,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" name="response" value="Crear Experiencia" formaction=@Url.Action("Crear") formmethod="post" class="btn btn-primary" />
+                <input type="submit" name="response" value="Crear Portafolio" formaction=@Url.Action("Crear") formmethod="post" class="btn btn-primary" />
             </div>
         </div>
     </div>

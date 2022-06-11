@@ -12,9 +12,9 @@ namespace parcialFinalWebEntidades
     {
         [Key]
         public int idGrado { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Debe ingresar la profesión")]
         public string profesion { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Debe ingresar la universidad")]
         public string universidad { get; set; }
         public string objetivo { get; set; }
         [Required]

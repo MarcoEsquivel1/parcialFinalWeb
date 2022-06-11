@@ -11,9 +11,9 @@ namespace parcialFinalWebEntidades
     {
         [Key]
         public int idCertifiado { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Debe ingresar el nombre del certificado")]
         public string nombre { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Debe ingresar la institución del certificado")]
         public string institucion { get; set; }
         public string descripcion { get; set; }
         public string enlace { get; set; }

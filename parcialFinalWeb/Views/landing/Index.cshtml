@@ -9,46 +9,46 @@
     var gradosList = ViewBag.Grados;
 }
 <div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
+    <div class="container bg-light bg-gradient">
+        <div class="row py-4">
+            <div class="col-12 text-center ">
                 <h1 class="display-3">@Model.username</h1>
             </div>
         </div>
-    <div class="row">
-        <div class="col-6 align-content-center">
-            <img src="@Model.foto" width="400" height="400" />
+    <div class="row pb-4">
+        <div class="col-6 pt-5 align-content-center">
+            <img class="d-block m-auto" src="@Model.foto" width="400" height="400" />
         </div>
 
         <div class="col-6 pt-5">
-            <h3 class="display-6">Nombre Completo:</h3>
-            <p>@Model.nombres @Model.apellidos</p>
-            <h3 class="display-6">Información Personal</h3>
+            <h4 class="display-6 text-warning">Nombre Completo:</h4>
+            <p class="fw-bold">@Model.nombres @Model.apellidos</p>
+            <h4 class="display-6 text-warning">Información Personal</h4>
             @if (Model.introduccion != null && Model.introduccion != "")
             {
                 <p><strong>Introducción:</strong> <br>@Model.introduccion</p>            
             }
-            <h3 class="display-6">Contactos</h3>
+            <h4 class="display-6 text-warning">Contactos</h4>
             <p><i class="fa-solid fa-square-envelope fa-xl"></i><strong> Correo Electronico:</strong> <br> @Model.correo</p>
             @if (Model.linkedin != null && Model.linkedin != "")
             {
-                <a href="@Model.linkedin" class="text-decoration-none text-black"><p><i class="fa-brands fa-linkedin fa-xl"></i><strong> Linkedin:</strong> <br>Link del perfil ></p></a>            
+                <a href="@Model.linkedin" class="text-decoration-none text-black"><p><i class="fa-brands fa-linkedin fa-xl"></i><strong> Linkedin:</strong> <br><span class="text-info">Link del perfil -></span></p></a>            
             }
             @if (Model.facebook != null && Model.facebook != "")
             {
-                <a href="@Model.facebook" class="text-decoration-none text-black"><p><i class="fa-brands fa-facebook-square fa-xl"></i><strong> Facebook:</strong> <br>Link del perfil ></p></a>            
+                <a href="@Model.facebook" class="text-decoration-none text-black"><p><i class="fa-brands fa-facebook-square fa-xl"></i><strong> Facebook:</strong> <br><span class="text-info">Link del perfil -></span></p></a>            
             }
         </div>
     </div>
     @if (habilidadesList.Count != 0)
     {
-        <div class="row">
+        <div class="row py-5">
             <div class="col-12">
                 <div class="row">
                     <div class="col-3">
-                        <h3 class="display-6">Mis Habilidades</h3>
+                        <h3 class="display-6 ms-3 fw-bold fst-italic">Mis Habilidades</h3>
                     </div>
-                    <div class="col-8">
+                    <div class="col-9">
                         <hr class="dashed">
                     </div>
                 </div>
@@ -77,9 +77,9 @@
                     {
                         x = "100%";
                     }
-                    <p class="h6 mt-3 float-none"><i>@item.habilidad</i></p>
-                    <div class="progress" style="height: 25px;">
-                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: @x" aria-valuenow="@item.calificacion" aria-valuemin="0" aria-valuemax="5"> @item.calificacion/5</div>
+                    <p class="h6 mt-3 float-none px-4 text-danger"><i>@item.habilidad</i></p>
+                    <div class="progress mx-4" style="height: 25px;">
+                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: @x" aria-valuenow="@item.calificacion" aria-valuemin="0" aria-valuemax="5"> @item.calificacion/5</div>
                     </div>
                 }
             </div>
@@ -87,12 +87,13 @@
 
     @if (gradosList.Count != 0 || certificadosList.Count != 0)
     {
-        <hr class="dashed mt-5">
-        <div class="row mt-5">
+        <hr class="dashed ">
+        <div class="row py-5 ">
+            
             <div class="col-6 mycontent-left">
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="display-6 text-center">Grados Academicos</h3>
+                        <h3 class="display-6 text-center fw-bold fst-italic">Grados Academicos</h3>
                     </div>
                 </div>
 
@@ -101,7 +102,7 @@
                 {
                     <div class="row mt-5">
                         <div class="col-4">
-                            <i class="fa-solid fa-graduation-cap fa-6x float-end text-primary"></i>
+                            <i class="fa-solid fa-graduation-cap fa-6x float-end text-success"></i>
                         </div>
                         <div class="col-8">
                             <h4>@item.universidad</h4>
@@ -115,7 +116,7 @@
             <div class="col-6">
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="display-6 text-center">Cursos/Certificados</h3>
+                        <h3 class="display-6 text-center fw-bold fst-italic">Cursos/Certificados</h3>
                     </div>
                 </div>
 
@@ -124,7 +125,7 @@
                 {
                     <div class="row mt-5">
                         <div class="col-4">
-                            <i class="fa-solid fa-book-open fa-6x float-end text-primary"></i>
+                            <i class="fa-solid fa-book-open fa-6x float-end text-danger"></i>
                         </div>
                         <div class="col-8">
                             <h4>@item.institucion</h4>
@@ -140,11 +141,11 @@
 
     @if (portafoliosList.Count != 0)
     {
-        <div class="row mt-5">
+        <div class="row py-5">
             <div class="col-12">
                 <div class="row">
                     <div class="col-3">
-                        <h3 class="display-6">Portafolio</h3>
+                        <h3 class="display-6 ms-3 fw-bold fst-italic">Portafolio</h3>
                     </div>
                     <div class="col-9">
                         <hr class="dashed">
@@ -152,18 +153,18 @@
                 </div>
 
                 <br />
-                <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion accordion-flush mx-4" id="accordionFlushExample">
                     @foreach (var item in portafoliosList)
                     {
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-heading_@item.idPortafolio">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_@item.idPortafolio" aria-expanded="false" aria-controls="flush-collapse_@item.idPortafolio">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header " id="flush-heading_@item.idPortafolio">
+                                <button class=" accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_@item.idPortafolio" aria-expanded="false" aria-controls="flush-collapse_@item.idPortafolio">
                                     <h4><i class="fa-solid fa-folder-plus "></i> @item.nombreProyecto</h4>
                                 </button>
                             </h2>
-                            <div id="flush-collapse_@item.idPortafolio" class="accordion-collapse collapse" aria-labelledby="flush-heading_@item.idPortafolio" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapse_@item.idPortafolio" class="accordion-collapse collapse " aria-labelledby="flush-heading_@item.idPortafolio" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body ps-5">
-                                    <h5 class="ms-5">Rol en el proyecto: <span class="text-danger">@item.rol</span></h5>
+                                    <h5 class="ms-5 text-black">Rol en el proyecto: <span class="text-danger">@item.rol</span></h5>
                                     <h6 class="text-muted ms-5">@item.resumen</h6>
                                     <h6 class="text-primary mt-4 ms-5">Responsabilidades:</h6>
                                     <h6 class="text-muted ms-5">@item.responsabilidades</h6>
@@ -180,13 +181,13 @@
 
     @if (experienciasList.Count != 0)
     {
-        <div class="row my-5">
+        <div class="row py-5">
             <div class="col-12">
                 <div class="row">
                     <div class="col-3">
-                        <h3 class="display-6">Experiencia Laboral</h3>
+                        <h3 class="display-6 ms-3 fw-bold fst-italic">Experiencia Laboral</h3>
                     </div>
-                    <div class="col-8">
+                    <div class="col-9">
                         <hr class="dashed">
                     </div>
                 </div>
@@ -194,11 +195,11 @@
                 <br />
                 @foreach (var item in experienciasList)
                 {
-                    <div class="row mt-5">
-                        <div class="col-4">
-                            <i class="fa-solid fa-briefcase fa-4x float-end text-primary"></i>
+                    <div class="row py-4">
+                        <div class="col-5">
+                            <i class="fa-solid fa-briefcase fa-4x float-end text-info"></i>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                             <h4>@item.experiencia</h4>
                             <h6 class="text-danger">@item.anios Años</h6>
                         </div>

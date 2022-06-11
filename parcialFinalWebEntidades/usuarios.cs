@@ -13,15 +13,15 @@ namespace parcialFinalWebEntidades
     {
         [Key]
         public int idUsuario { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Debe ingresar el nombre de usuario")]
         public string username { get; set; }
         [MaxLength(300, ErrorMessage = "Link demasiado grande")]
         public string foto { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Debe ingresar el nombre")]
         public string nombres { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Debe ingresar el apellido")]
         public string apellidos { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Debe ingresar el correo")]
         public string correo { get; set; }
         public string introduccion { get; set; }
         [MaxLength(300, ErrorMessage = "Link demasiado grande")]
